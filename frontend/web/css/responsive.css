@@ -1,0 +1,18 @@
+.header-area.header-2-area .header-top-2::before{
+    width: 16%;
+}
+@media (min-width: 2200px) {
+    .header-area.header-2-area .header-top-2::before{
+        width: 25%;
+    }
+    .header-area .main-header::before{
+        width: 28%;
+    }
+}
+@media (max-width: 2604px) {
+
+}
+
+@media (max-width: 3000px) {
+
+}

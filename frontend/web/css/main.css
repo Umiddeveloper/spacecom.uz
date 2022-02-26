@@ -1,0 +1,266 @@
+#lightgallery a img {
+    padding-top: 10px;
+    padding-right: 6px;
+}
+.main-btn{
+    margin-bottom: 20px;
+}
+#lightgallery{
+    padding-bottom: 220px;
+}
+.header_top{
+    background-color: #1da1f2;;
+    margin-top: 80px;
+    padding: 60px 0;
+}
+.header_top:before{
+    position: absolute;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.11) 1px, transparent 1px);
+    background-size: 10px 10px;
+    content: '';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+.img_grid{
+    content: "";
+    position: absolute;
+    background: #00000087;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0.2, 0.2);
+    -ms-transform: scale(0.2, 0.2);
+    -moz-transform: scale(0.2, 0.2);
+    -o-transform: scale(0.2, 0.2);
+    transform: scale(0.2, 0.2);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-ttransition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.searchBox {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 99;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: url(../images/closeimg.png), auto;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+.searchBox.show {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+.searchBox.show,
+.searchBox {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.searchBoxContainer {
+    width: 50%;
+    position: relative;
+    text-align: end;
+    -webkit-transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    transform: translateY(200px);
+    visibility: hidden;
+}
+
+.searchBox.show .searchBoxContainer {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+    visibility: visible;
+}
+
+.searchBox.show .searchBoxContainer,
+.searchBoxContainer {
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+}
+
+.search_bar_inner {
+    position: relative;
+    height: 50px;
+}
+
+.search_bar_inner input {
+    width: 100%;
+    height: 50px;
+    padding: 12px 55px 12px 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    border-bottom: 2px solid #cdd5e0;
+    color:#cdd5e0;
+}
+
+.search_bar_inner input::-webkit-input-placeholder {
+    color:#cdd5e0;
+    opacity: 90%;
+}
+
+.search_bar_inner input::-moz-placeholder {
+    color:#cdd5e0;
+    opacity: 90%;
+}
+
+.search_bar_inner input:-ms-input-placeholder {
+    color:#cdd5e0;
+    opacity: 90%;
+}
+
+.search_bar_inner input:-moz-placeholder {
+    color:#cdd5e0;
+    opacity: 90%;
+}
+
+.search_bar_inner button {
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    bottom: 3px;
+    border: none;
+    background: transparent;
+    color:#cdd5e0;
+    width: 45px;
+    font-size: 20px;
+    border-radius: 26px;
+}
+
+.closeBtn {
+    margin: 0 0 20px 0;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.closeBtn svg {
+    width: 20px;
+    fill:#cdd5e0;
+}
+#header_inner-search{
+    display: none;
+}
+.video_img{
+    padding-bottom: 45px;
+}
+@media (max-width: 992px) {
+    #header_inner-search{
+        display: block;
+    }
+}
+table {
+    width: 100% !important;
+}
+.brand-area .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 170px;
+    width: 50px;
+    text-align: center;
+    line-height: 170px;
+
+    z-index: 99;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    font-size: 50px;
+    color: #1da1f2;
+
+
+}
+.brand-area .slick-arrow.next {
+    right: 0px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400 !important;
+}
+.photo_inner-iteam a{
+  color:#7e8591;
+    font-weight: 400;
+}
+.photo_inner-iteam a:hover {
+ color: #1da1f2;
+}
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating > input { display: none; }
+.rating > label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating > .half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+.anouns_text a{
+    padding:45px 0;
+    color: #192437;
+}
+.image_anouns{
+    padding: 19px 79px;
+}
